@@ -7,7 +7,7 @@ export default class App {
 	private bag: MRE.Actor;
 	private rollers = new Map<MRE.Guid, RollController>();
 	public history: RollHistory;
-	
+	/*
 	function getJSONP(url, success) {
 
 		var ud = '_' + +new Date,
@@ -25,9 +25,10 @@ export default class App {
 	
 	}
 	
-	/*getJSONP('http://soundcloud.com/oembed?url=http%3A//soundcloud.com/forss/flickermood&format=js&callback=?', function(data){
+	
+	getJSONP('http://soundcloud.com/oembed?url=http%3A//soundcloud.com/forss/flickermood&format=js&callback=?', function(data){
 		console.log(data);
-	});  
+	});
 	*/
 	constructor(public context: MRE.Context, public params: MRE.ParameterSet) {
 		context.onUserLeft(u => {
